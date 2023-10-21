@@ -8,7 +8,7 @@ case "${unameOut}" in
     *)          machine="UNKNOWN:${unameOut}"
 esac
 
-echo ${machine}
+echo "Operating System: " ${machine}
 
 if [ "$machine" == "Mac" ]; then
     echo "Removing all .DS_Store files from MacOS"
